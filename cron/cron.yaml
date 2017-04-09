@@ -1,0 +1,9 @@
+cron:
+- description: daily run
+  url: /run/daily
+  schedule: every day 09:00
+  target: cron
+- description: weekly run
+  url: /run/weekly
+  schedule: every monday 09:00
+  target: cron

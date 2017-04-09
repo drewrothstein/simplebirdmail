@@ -1,0 +1,434 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <style type="text/css">
+    body {
+      margin:0px;
+      padding:0px;
+      -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%;
+    }
+    .actions {
+      height:16px;
+      margin:0px;
+      padding:0px;
+      display:block;
+      -ms-interpolation-mode:bicubic;
+      border:none;
+      outline:none;
+    }
+    .addressLink {
+      font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -webkit-text-size-adjust:none;
+      font-size:12px;
+      padding:0px;
+      margin:0px;
+      font-weight:normal;
+      line-height:16px;
+      color: #8899A6;
+      padding:0px;
+      margin:0px;
+    }
+    .addressLink a {
+      color:#8899A6 !important;
+      text-decoration:none !important;
+    }
+    .dashline {
+      white-space:nowrap;
+      font:15px courier;
+      color: #ffffff;
+    }
+    .full_tweet_box {
+      margin:0px;
+      padding:0px;
+      border:1px solid #E1E8ED;
+      background-color:#FFFFFF;
+      border-radius:4px;
+      -webkit-border-radius:4px;
+      -moz-border-radius:4px;
+    }
+    .full_tweet_margin_tb,
+    .full_tweet_margin_lr {
+      margin:0px;
+      padding:0px;
+      height:24px;
+    }
+    .full_tweet_text {
+      margin:0px;
+      padding:0px;
+      font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size:14px;
+      line-height:18px;
+      -webkit-font-smoothing:antialiased;
+      -webkit-text-size-adjust:none;
+      color:#31373B;
+      padding:0px;
+      margin:0px;
+    }
+    .header {
+      margin:0px;
+      padding:0px;
+      font-family:'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -webkit-text-size-adjust:none;
+      font-weight:300;
+      color:#292F33;
+      font-size:21px;
+      line-height:21px;
+      padding:0px;
+      margin:0px;
+      white-space:nowrap;
+    }
+    .inline_img {
+      width:14px;
+      height:14px;
+      vertical-align:top;
+      margin:0px;
+      padding:0px;
+      display:block;
+      -ms-interpolation-mode:bicubic;
+      border:none;
+      outline:none;
+      display:inline-block;
+    }
+    .playable {
+      margin:0px;
+      padding:0px;
+      padding:0px;
+      margin:0px;
+      background-color:#ffffff;
+      background-repeat:no-repeat;
+      background-size:100%;
+    }
+    .player {
+      margin:0px;
+      padding:0px;
+      display:block;
+      -ms-interpolation-mode:bicubic;
+      border:none;
+      outline:none;
+    }
+    .screen-name {
+      margin:0px;
+      padding:0px;
+      text-decoration:none;
+      color:#2398E1;
+    }
+    .social_count {
+      margin:0px;
+      padding:0px;
+      font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size:12px;
+      line-height:16px;
+      color:#AAB8C2;
+      vertical-align:middle;
+    }
+    .user_avatar_img {
+      margin:0px;
+      padding:0px;
+      display:block;
+      -ms-interpolation-mode:bicubic;
+      border:none;
+      outline:none;
+      padding:0px;
+      margin:0px;
+      width:32px;
+      height:32px;
+      border-radius:4px;
+      -moz-border-radius:4px;
+      -webkit-border-radius:4px;
+    }
+    .user_handle {
+      margin:0px;
+      padding:0px;
+      text-decoration:none;
+      font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -webkit-text-size-adjust:none;
+      font-size:14px;
+      line-height:16px;
+      color:#8899A6;
+      padding:0px;
+      margin:0px;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .user_name {
+      margin:0px;
+      padding:0px;
+      text-decoration:none;
+      font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -webkit-text-size-adjust:none;
+      font-size:16px;
+      line-height:18px;
+      font-weight:bold;
+      color:#292F33;
+      padding:0px;
+      margin:0px;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .wrapper {
+      margin:0px;
+      padding:0px;
+      width:448px;
+    }
+
+    @media only screen and (max-width: 448px) {
+    .wrapper { width:100% !important; }
+    .full_tweet_margin_lr { width: 12px !important; }
+    .full_tweet_margin_tb { height: 14px !important; }
+    .moment_card_margin_lr { width: 12px !important; }
+    .moment_card_margin_tb { height: 12px !important; }
+    .module_space { height: 12px !important; }
+    .module_margin_lr { width: 12px !important; }
+    .module_margin_tb { height: 12px !important; }
+    .full_tweet_box { border-radius: 0px !important; 
+      -webkit-border-radius: 0px !important;
+      -moz-border-radius: 0px !important;
+      border-left: none !important;
+      border-right: none !important; }
+    .quote_tweet_identity_truncate { width: 200px !important; }
+    .player { width: 100% !important; }
+    .inline_action_space { width: 60px !important; }
+    .dashline { display: none !important; }
+    .social_proof_margin_lr { width: 12px !important; }
+    .news_margin_bottom { height: 14px !important; }
+    .people_card_user_name { width: 170px !important; }
+    .people_card_user_handle { width: 170px !important; }
+    .button-width-full { width: 90% !important; }
+    .width_full { width: 100% !important; }
+    }
+    @media only screen and (max-width: 380px) {
+      .inline_action_space { width: 50px !important; }
+      .people_card_user_name { width: 140px !important; }
+      .people_card_user_handle { width: 140px !important; }
+      .user_name_truncate { width: 170px !important; }
+      .user_handle_truncate { width: 170px !important; }
+      .button-width-full { width: 86% !important; } 
+    }
+    @media only screen and (max-width: 350px) {
+      .inline_action_space { width: 40px !important; }
+      .people_card_user_name { width: 100px !important; }
+      .people_card_user_handle { width: 100px !important; }
+      .user_name_truncate { width: 140px !important; }
+      .user_handle_truncate { width: 140px !important; }
+    }
+  </style>
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#F5F8FA;margin:0px;padding:0px;">
+    <tr><td align="center" style="margin:0px;padding:0px;">
+      <table cellpadding="0" cellspacing="0" border="0" class="wrapper">
+
+<!-- header start -->
+        <tr><td align="center" style="margin:0px;padding:0px;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:0px;padding:0px;">
+            <tr><td height="24" style="height:24px;margin:0px;padding:0px;"></td></tr>
+              <tr><td align="center" style="margin:0px;padding:0px;">
+                <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0px;padding:0px;">
+                  <tr><td height="6" style="height:6px;margin:0px;padding:0px;"></td></tr>
+                    <tr align="center">
+                      <td class="header"> Simple Bird Mail</td>
+                    </tr>
+                </table>
+              </td></tr>
+              <tr><td height="24" style="height:24px;margin:0px;padding:0px;"></td></tr>
+          </table>
+        </td></tr>
+<!-- header end -->
+
+<!-- content start -->
+        {{#each tweet}}
+        <tr><td align="center" style="margin:0px;padding:0px;">
+          <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+            <tr><td class="full_tweet_box">
+              <a href="https://twitter.com/{{screen_name}}/status/{{id}}" style="margin:0px;padding:0px;text-decoration:none;">
+                <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                  <tr><td height="24" class="full_tweet_margin_tb"></td></tr>
+
+<!-- top margin -->
+                  <tr><td style="margin:0px;padding:0px;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                      <tr>
+                        <td width="24" class="full_tweet_margin_lr"></td>
+
+<!-- left margin -->
+                        <td style="margin:0px;padding:0px;">
+                          <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                            <tr><td style="margin:0px;padding:0px;">
+
+<!-- user identity start -->
+                              <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                                <tr><td width="32" style="margin:0px;padding:0px;">
+                                  <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                    <img alt="avatar" src="{{profile_img}}" width="32" height="32" class="user_avatar_img"/>
+                                  </a>
+                                </td>
+                                <td width="10" style="width:10px;margin:0px;padding:0px;"></td>
+                                  <td style="margin:0px;padding:0px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="margin:0px;padding:0px;">
+                                      <tr><td style="margin:0px;padding:0px;">
+                                        <a class="user_name" href="">{{name}}
+                                          {{#if verified}}
+                                          <img class="inline_img" src="https://ea.twimg.com/email/self_serve/media/ico_verified-1407009642236.png" width="14" height="14"/>
+                                          {{/if}}
+                                        </a>
+                                      </td></tr>
+                                        <tr><td style="margin:0px;padding:0px;">
+                                          <a class="user_handle" href="">{{screen_name}}</a>
+                                        </td></tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td></tr>
+
+<!-- user identity end -->
+                            <tr><td height="14" style="height:14px;margin:0px;padding:0px;"></td></tr>
+                            <tr><td style="margin:0px;padding:0px;">
+
+<!-- tweet content start -->
+                              <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                                <tr><td style="margin:0px;padding:0px;">
+                                  <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;">
+                                      <tr><td class="full_tweet_text">{{this.text}}</td></tr>
+                                    </table>
+                                  </a>
+                                </td></tr>
+                                  
+                                  {{#if this.media_url}}
+                                  <tr><td height="14" style="height:14px;margin:0px;padding:0px;"></td></tr>
+                                  <tr><td style="margin:0px;padding:0px;">
+                                    <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                      <img src="{{this.media_url}}" style="width:100%;margin:0px;padding:0px;display:block;border:none;outline:none;"/>
+                                    </a>
+                                    <!--
+                                    <table border="0" cellpadding="0" cellspacing="0" style="margin:0px;padding:0px;">
+                                      <tr><td style="margin:0px;padding:0px;">
+                                        <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                          <img src="https://ea.twimg.com/email/self_serve/media/play-400x400-1422042481486.png" class="player" width="400" />
+                                        </a>
+                                      </td></tr>
+                                    </table>
+                                    -->
+                                  </td></tr>
+                                  {{/if}}
+                              </table>
+                            </td></tr>
+
+<!-- tweet content end -->
+                            <tr><td height="14" style="height:14px;margin:0px;padding:0px;"></td></tr>
+                            <tr>
+                              <td dir="ltr" style="margin:0px;padding:0px;">
+
+<!-- inline action start -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="min-width:100%;width:100%;margin:0px;padding:0px;" align="left" dir="ltr">
+                                  <tr>
+                                    <td valign="middle" style="margin:0px;padding:0px;">
+                                      <table cellpadding="0" cellspacing="0" border="0" align="left" dir="ltr" style="margin:0px;padding:0px;">
+                                        <tr>
+                                          <td style="margin:0px;padding:0px;">
+                                            <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                              <img alt="reply" class="actions" src="https://ea.twimg.com/email/self_serve/media/darker-reply-1463676567523.png" height="16"/>
+                                            </a>
+                                          </td>
+                                          <td width="70" style="width:70px;margin:0px;padding:0px;"></td>
+                                          <td valign="middle" class="social_count">
+                                            <table cellpadding="0" cellspacing="0" border="0" style="margin:0px;padding:0px;">
+                                              <tr>
+                                                <td style="margin:0px;padding:0px;">
+                                                  <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                                    <img alt="retweet" class="actions" src="https://ea.twimg.com/email/self_serve/media/darker-retweet-1463676568959.png" height="16"/>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td width="70" style="width:70px;margin:0px;padding:0px;">
+                                            <span class="social_count">&nbsp;{{this.retweet_count}}</span>
+                                          </td>
+                                          <td valign="middle" class="social_count">
+                                            <table cellpadding="0" cellspacing="0" border="0" style="margin:0px;padding:0px;">
+                                              <tr>
+                                                <td style="margin:0px;padding:0px;">
+                                                  <a href="" style="margin:0px;padding:0px;text-decoration:none;">
+                                                    <img alt="favorite" class="actions" src="https://ea.twimg.com/email/self_serve/media/darker-like-1463676566450.png" height="16"/>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td width="70" style="width:70px;margin:0px;padding:0px;">
+                                            <span class="social_count">&nbsp;{{this.favorite_count}}</span>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+<!-- inline action end -->
+                        <td width="24" class="full_tweet_margin_lr"></td>
+
+<!-- right margin -->
+                      </tr>
+                    </table>
+                  </td></tr>
+                  <tr><td height="24" class="full_tweet_margin_tb"></td></tr>
+                </table>
+              </a>
+            </td></tr>
+
+<!-- bottom margin -->
+            <tr><td height="20" class="module_space" style="margin:0px;padding:0px;height:20px;"></td></tr>
+          </table>
+        </td></tr>
+        {{/each}}
+
+<!-- content end -->
+        <tr><td height="10" style="height:10px;margin:0px;padding:0px;"></td></tr>
+        <tr><td height="60" style="height:60px;margin:0px;padding:0px;"></td></tr>
+
+<!-- footer start -->
+        <tr><td style="margin:0px;padding:0px;">
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%;margin:0px;padding:0px;">
+        
+            <tr><td height="20" style="height:20px;margin:0px;padding:0px;"></td></tr>
+            <tr><td height="10" style="height:10px;margin:0px;padding:0px;"></td></tr>
+            <tr><td height="7" style="height:7px;margin:0px;padding:0px;"></td></tr>
+            <tr><td align="center" style="margin:0px;padding:0px;">
+              <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="margin:0px;padding:0px;">
+                <tr>
+                  <td class="empty" width="48" style="margin:0px;padding:0px;"></td>
+                  <td align="center" style="margin:0px;padding:0px;">
+                    <span class="addressLink"> Simple Bird Mail</span>
+                  </td>
+                  <td class="empty" width="48" style="margin:0px;padding:0px;"></td>
+                </tr>
+              </table>
+            </td></tr>
+            <tr><td height="26" style="height:26px;margin:0px;padding:0px;"></td></tr>
+          </table>
+        </td></tr>
+
+<!-- footer end -->
+      </table>
+    </td></tr>
+  </table>
+  <div class="dashline" align="center">------------------------------------------------</div>
+</body>
+</html>

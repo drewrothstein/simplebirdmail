@@ -1,0 +1,25 @@
+service: default
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: /static
+  static_dir: static
+  secure: always
+- url: /.well-known/acme-challenge/<NEED_TO_CREATE>
+  static_files: <NEED_TO_CREATE>.txt
+  mime_type: text/plain
+  upload: <NEED_TO_CREATE>.txt
+- url: /.well-known/acme-challenge/<NEED_TO_CREATE>
+  static_files: <NEED_TO_CREATE>.txt
+  mime_type: text/plain
+  upload: <NEED_TO_CREATE>.txt
+- url: /.*
+  script: main.app
+  secure: always
+# [END handlers]

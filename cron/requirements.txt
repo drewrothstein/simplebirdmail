@@ -1,0 +1,7 @@
+Flask==0.12
+google-cloud==0.23.0
+google-api-python-client==1.6.2
+mailchimp3==2.0.9
+mandrill==1.0.57
+python-dateutil==2.6.0
+requests==2.13.0

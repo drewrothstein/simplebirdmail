@@ -1,0 +1,3 @@
+service: proxy
+runtime: nodejs
+env: flex

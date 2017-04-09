@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Bird Mail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="presubmit">
+      
+      <h1>Simple Bird Mail</h1>
+      <div class="row">
+      <div class="col-md-4">
+        <form class="handleform">
+          <div class="form-group">
+            <label>Twitter Handle</label>
+            <div class="u-posRelative">
+              <input class="Typeahead-hint" type="text" tabindex="-1" readonly>
+              <input class="Typeahead-input" id="handle-input" type="text" name="q" placeholder="Search Twitter users...">
+              <img class="Typeahead-spinner" src="/static/spinner.gif">
+            </div>
+            <div class="Typeahead-menu"></div>
+          </div>
+        </form>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col-md-4">
+        <div id="mc_embed_signup">
+          <form action="//<SOME_MAILCHIMP_LIST>.list-manage.com/subscribe/post?u=85292bf854700d5a7d30a9c1a&amp;id=c82fde04ee&amp;TWITTERHAN=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div class="mc-field-group input-group">
+                <strong>Frequency </strong>
+              <ul>
+                <li><input type="radio" value="Daily" name="FREQUENCY" id="mce-FREQUENCY-0"><label for="mce-FREQUENCY-0"> Daily</label></li>
+                <li><input type="radio" value="Weekly" name="FREQUENCY" id="mce-FREQUENCY-1"><label for="mce-FREQUENCY-1"> Weekly</label></li>
+              </ul>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_85292bf854700d5a7d30a9c1a_c82fde04ee" tabindex="-1" value=""></div>
+            <input type="hidden" name="TWITTERHAN" id="TWITTERHAN" value="" />
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+          </form>
+        </div>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+      <div class="col-md-6">
+        <h2>Mail Sample</h2>
+        <img src="/static/mail03.png">
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col-md-8">
+        <h2>What is this?</h2>
+        <p>This is a simple service that allows you to sign-up and receive an Email of the most recent Tweets from any Twitter user at your desired Frequency.</p>
+        <p>This service is not affiliated with the company Twitter and simply uses their Public APIs.</p>
+        <p>This service is provided free of charge with absolutely no guarantees and could disappear at any time for any reason.</p>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col-md-8">
+        <h2>Contact</h2>
+        <div class="icons">
+          <a href="https://twitter.com/mediocrity"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="https://github.com/drewrothstein"><i class="fa fa-github fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/drewrothstein"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div id="success" class="jumbotron" style="display:none;">
+        <h1>Success!</h1>
+        <p>Thanks for signing up.</p>
+        <a href="/" class="btn btn-info">
+          <i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home
+        </a>
+      </div>
+    </div>
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.1.1/typeahead.bundle.min.js"></script>
+    <script src="/static/main.js"></script>
+    <script src="/static/waitingfor.js"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='FREQUENCY';ftypes[3]='radio';fnames[1]='TWITTERHAN';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+/* Page */
+
+.icons {
+  margin-bottom: 100px;
+}
+
+.icons a {
+  padding-right: 10px;
+}
+
+/* MailChimp */
+
+#mc_embed_signup{
+  background: #fff;
+  clear: left;
+}
+
+/* Form */
+
+.handleform {
+  padding: 10px 0 0 3%;
+  clear: left;
+  position: relative;
+  width: 96%;
+  min-height: 50px;
+}
+
+.handleform .form-group {
+  margin-bottom: 0;
+  min-height: 50px;
+}
+
+.handleform input {
+  border: 1px solid #ABB0B2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.handleform input:focus {
+  border-color: #333;
+}
+
+.handleform label {
+  margin-bottom: 3px;
+}
+
+/* Typeahead Defaults */
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-menu {
+  margin-top: 4px;
+  padding: 4px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor,.tt-suggestion:hover {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.Typeahead *,
+.Typeahead *:before,
+.Typeahead *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+.u-cf:before,
+.u-cf:after {
+  content: " ";
+  display: table;
+}
+
+.u-cf:after {
+  clear: both;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-posRelative {
+  position: relative;
+}
+
+/* Typeahead */
+
+.Typeahead-spinner {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: none;
+  width: 28px;
+  height: 28px;
+}
+
+.Typeahead-hint,
+.Typeahead-input {
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 1px solid #024e6a;
+}
+
+.Typeahead-hint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccd6dd;
+  opacity: 1;
+}
+
+.Typeahead-input {
+  position: relative;
+  background-color: transparent;
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  outline: none;
+}
+
+.Typeahead-menu {
+  position: absolute;
+  top: 95%;
+  left: 2.5%;
+  z-index: 100;
+  display: none;
+  width: 95%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 0px 1px green;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.Typeahead-menu.is-open {
+  display: block;
+}
+
+/* ProfileCard */
+
+.ProfileCard {
+  position: relative;
+  padding: 8px;
+}
+
+.ProfileCard-avatar {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #ccd6dd;
+  border-radius: 5px;
+}
+
+.ProfileCard:hover .ProfileCard-avatar {
+  border-color: #f5f8fa;
+}
+
+.ProfileCard-details {
+  min-height: 60px;
+  padding-left: 60px;
+}
+
+.ProfileCard-realName,
+.ProfileCard-screenName {
+  display: inline-block;
+}
+
+.ProfileCard-realName {
+  font-weight: 700;
+}
+
+.ProfileCard-screenName {
+  color: #8899a6;
+}
+
+.ProfileCard-description {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ProfileCard:hover,
+.ProfileCard.is-active {
+  color: #fff;
+  background: #55acee;
+}
+
+.ProfileCard:hover .ProfileCard-screenName,
+.ProfileCard.is-active .ProfileCard-screenName {
+  color: #fff;
+}
+
